@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 export const Menu = (props: { menuItems: Array<string> }) => {
   return (
@@ -7,7 +8,9 @@ export const Menu = (props: { menuItems: Array<string> }) => {
         <ul>
           {props.menuItems.map((item, index) => {
             return <li key={index}>
-              <a href="">{item}</a>
+              <a href="">
+                {item}
+              </a>
             </li>
           })}
         </ul>
@@ -22,3 +25,4 @@ const StyledMenu = styled.nav`
     justify-content: center;
   }
 `
+

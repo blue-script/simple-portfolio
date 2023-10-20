@@ -12,7 +12,7 @@ export const Slogan = () => {
   );
 };
 
-const StyledSlogan = styled.div`
+const StyledSlogan = styled.section`
   min-height: 30vh;
   background-color: #cefdf4;
 `

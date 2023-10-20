@@ -1,0 +1,9 @@
+{
+    "editor.defaultFormatter": "formulahendry.code-runner",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
