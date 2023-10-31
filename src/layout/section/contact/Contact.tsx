@@ -4,60 +4,20 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import { S } from './Contacts_Styles';
 
-export const Contact = () => {
+export const Contact: React.FC = () => {
   return (
-      <StyledContacts>
+      <S.Contacts>
         <Container>
           <SectionTitle>Contact</SectionTitle>
-          <StyledForm>
-            <Field placeholder={"name"}/>
-            <Field placeholder={"subject"}/>
-            <Field placeholder={"message"} as={"textarea"}/>
+          <S.StyledForm>
+            <S.Field placeholder={"name"}/>
+            <S.Field placeholder={"subject"}/>
+            <S.Field placeholder={"message"} as={"textarea"}/>
             <Button type={"submit"}>Send message</Button>
-          </StyledForm>
+          </S.StyledForm>
         </Container>
-      </StyledContacts>
+      </S.Contacts>
   );
 };
-
-const StyledContacts = styled.section`
-
-`
-const StyledForm = styled.form`
-  max-width: 540px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items:  center;
-  gap: 16px;
-  margin: 0 auto;
-  
-  textarea {
-    resize: none;
-    height: 155px;
-  }
-`
-
-const Field = styled.input`
-  width: 100%;
-  border: 1px solid ${theme.color.borderColor};
-  background-color: ${theme.color.secondaryBg};
-  padding: 7px 15px;
-
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.6px;
-
-  color: ${theme.color.font};
-
-  &::placeholder {
-    color: ${theme.color.placeholderColor};
-    text-transform: capitalize;
-  }
-  
-  &:focus-visible {
-    outline: 1px solid ${theme.color.borderColor};
-  }
-`
