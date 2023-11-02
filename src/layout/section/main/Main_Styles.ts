@@ -46,7 +46,11 @@ const Name = styled.h2`
 `;
 
 const MainTitle = styled.h1`
-  ${font({ weight: 400, Fmin: 20, Fmax: 27 })}
+  ${font({ weight: 400, Fmin: 20, Fmax: 27 })};
+  
+  p {
+    display: none;
+  }
 `;
 
 const PhotoWrapper = styled.div`
