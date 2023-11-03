@@ -27,6 +27,7 @@ export const Button = styled.button`
     bottom: 0;
     height: 10px;
     width: 50%;
+    transition: ${theme.animations.transition};
     background-color: ${theme.color.accent};
     left: 50%;
     transform: translateX(-50%);

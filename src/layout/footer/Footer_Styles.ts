@@ -30,8 +30,8 @@ const SocialLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: ${theme.color.accent};
+  transition: ${theme.animations.transition};
 
   &:hover {
     color: ${theme.color.primaryBg};
